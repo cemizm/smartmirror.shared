@@ -7,7 +7,7 @@ Contains all shared components, directives, pipes and services, used by the smar
 To install this library, run:
 
 ```bash
-$ npm install smartmirror-shared --save
+$ npm install @cemizm/smartmirror-shared --save
 ```
 
 ## Usage
