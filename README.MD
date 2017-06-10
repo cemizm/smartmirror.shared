@@ -10,6 +10,12 @@ To install this library, run:
 $ npm install @cemizm/smartmirror-shared --save
 ```
 
+## Documentation
+
+A generated documentation of this project can be found here:
+
+[GitHub Pages](https://cemizm.github.io/smartmirror.shared/)
+
 ## Usage
 
 After the Installation of the library via npm, you can import it into your Angular/Ionic application by adding the `SmartMirrorModule` to the `AppModule`:
