@@ -1,0 +1,561 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>smartmirror-shared</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">smartmirror-shared</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">smartmirror-shared</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/SmartMirrorModule.html" >SmartMirrorModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/AuthService.html" >AuthService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MirrorService.html" >MirrorService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/SmartMirrorModuleConfig.html" >SmartMirrorModuleConfig</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/StorageService.html" >StorageService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/TicketService.html" >TicketService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/TokenService.html"  data-type="entity-link" class="active" >TokenService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">smartmirror-shared</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/SmartMirrorModule.html" >SmartMirrorModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/AuthService.html" >AuthService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MirrorService.html" >MirrorService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/SmartMirrorModuleConfig.html" >SmartMirrorModuleConfig</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/StorageService.html" >StorageService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/TicketService.html" >TicketService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/TokenService.html"  data-type="entity-link" class="active" >TokenService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>TokenService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+    </li>
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/token.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Service to access and store the JW-Token in the localStorage and to get notifications on authentication updates</p><br/><p>Example authentication notifications:</p><br/><pre class="line-numbers"><code class="language-typescript">import {TokenService} from &quot;&#40;cemizm/smartmirror-shared&quot;;<br/><br/>...<br/><br/>constructor(private tokenService: TokenService) {<br/>   tokenService.Updates.subscribe(type =&gt; {<br/>     console.log(&quot;Authentication updates: &quot; + type);<br/>   });<br/>}</code></pre>
+            </p>
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(storageService: <a href="../injectables/StorageService.html">StorageService</a>)</code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/services/token.service.ts:39</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Creates the AuthService</p><br/></div>
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>storageService</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Injected StorageService for storing authentication token</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> invalidate</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>invalidate()</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/services/token.service.ts:84</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Invalidates the stored token</p><br/></div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> Token</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>Token:     <code>string</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/services/token.service.ts:62</a></div>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Gets the Token of the authenticated user<br/>Sets the token of the authenticated user</p><br/></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Protected</span> updates</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-lock"></span><code>updates:     <code>Subject&lt;AuthUpdateType&gt;</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/services/token.service.ts:39</a></div>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Observable subject for authentication updates</p><br/></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> Updates</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>Updates:     <code>Observable&lt;AuthUpdateType&gt;</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/services/token.service.ts:54</a></div>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Observable to listen on authentication updates</p><br/></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &quot;@angular/core&quot;;
+import {StorageService} from &quot;./storage.service&quot;;
+import {Subject, Observable} from &quot;rxjs&quot;;
+
+const tokenKey &#x3D; &#x27;auth.token&#x27;;
+
+export enum AuthUpdateType {
+    LoginSucess &#x3D; 1,
+    AuthenticationFailure &#x3D; 2,
+}
+
+/**
+ * Service to access and store the JW-Token in the localStorage and to get notifications on authentication updates
+ *
+ * Example authentication notifications:
+ * &#x60;&#x60;&#x60;typescript
+ * import {TokenService} from &quot;@cemizm/smartmirror-shared&quot;;
+ *
+ * ...
+ *
+ * constructor(private tokenService: TokenService) {
+ *   tokenService.Updates.subscribe(type &#x3D;&gt; {
+ *     console.log(&quot;Authentication updates: &quot; + type);
+ *   });
+ * }
+ * &#x60;&#x60;&#x60;
+ */
+@Injectable()
+export class TokenService {
+
+    /**
+     * Observable subject for authentication updates
+     * @type {Subject&lt;AuthUpdateType&gt;}
+     */
+    private updates &#x3D; new Subject&lt;AuthUpdateType&gt;();
+
+
+    /**
+     * Creates the AuthService
+     * @param storageService Injected StorageService for storing authentication token
+     */
+    constructor(private storageService: StorageService) {
+
+    }
+
+    /**
+     * Observable to listen on authentication updates
+     * @return {Observable&lt;AuthUpdateType&gt;} The observable to subscribe authentication updates
+     */
+    get Updates(): Observable&lt;AuthUpdateType&gt; {
+        return this.updates;
+    }
+
+    /**
+     * Gets the Token of the authenticated user
+     * @return {string} Token of the authenticatd user
+     */
+    get Token(): string {
+        return this.storageService.getItem(tokenKey);
+    }
+
+    /**
+     * Sets the token of the authenticated user
+     * @param token The Token of the authenticated user
+     */
+    set Token(token: string) {
+        if (!token) {
+            this.invalidate();
+            return;
+        }
+
+        this.updates.next(AuthUpdateType.LoginSucess);
+
+        this.storageService.setItem(tokenKey, token);
+    }
+
+    /**
+     * Invalidates the stored token
+     */
+    invalidate(): void {
+        if (this.Token) {
+            this.updates.next(AuthUpdateType.AuthenticationFailure);
+        }
+
+        this.storageService.removeItem(tokenKey);
+    }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "@cemizm/smartmirror-shared",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cemizm/smartmirror.shared"
+  },
+  "author": {
+    "name": "Cem Basoglu",
+    "email": "cem.basoglu@web.de"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cemizm/smartmirror.shared/issues"
+  },
+  "module": "smartmirror-shared.js",
+  "typings": "smartmirror-shared.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
