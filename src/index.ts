@@ -8,6 +8,7 @@ import {SmartMirrorModuleConfig} from "./utils/module.config";
 import {SmartMirrorModuleOptions} from "./utils/module.options";
 import {SmartMirrorService} from "./services/smartmirror.service";
 import {AuthService} from "./services/auth.service";
+import {TicketService} from "./services/ticket.service";
 
 export * from './models/index';
 export * from './services/index';
@@ -62,7 +63,8 @@ export class SmartMirrorModule {
                 StorageService,
                 TokenService,
                 AuthService,
-                MirrorService
+                MirrorService,
+                TicketService
             ]
         };
     }
