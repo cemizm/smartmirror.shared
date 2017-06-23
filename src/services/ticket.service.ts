@@ -35,8 +35,8 @@ export class TicketService  {
      * @param id The id of the mirror to create a new registration ticket
      * @return {Observable<R>} ticket for registration
      */
-    public get(id:string): Observable<Array<Ticket>> {
-        return this.service.get(this.api + '/' + id).map(res => <Array<Ticket>>res.json());
+    public get(id:string): Observable<Ticket> {
+        return this.service.get(this.api + '/' + id).map(res => <Ticket>res.json());
     }
 
     /**
