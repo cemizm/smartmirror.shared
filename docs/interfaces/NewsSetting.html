@@ -91,7 +91,7 @@
                                     <a href="../injectables/MirrorService.html" >MirrorService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../injectables/SmartMirrorModuleConfig.html"  data-type="entity-link" class="active" >SmartMirrorModuleConfig</a>
+                                    <a href="../injectables/SmartMirrorModuleConfig.html" >SmartMirrorModuleConfig</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
@@ -135,7 +135,7 @@
                                     <a href="../interfaces/Mirror.html" >Mirror</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/NewsSetting.html" >NewsSetting</a>
+                                    <a href="../interfaces/NewsSetting.html"  data-type="entity-link" class="active" >NewsSetting</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/RegisterRequest.html" >RegisterRequest</a>
@@ -253,7 +253,7 @@
                                            <a href="../injectables/MirrorService.html" >MirrorService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../injectables/SmartMirrorModuleConfig.html"  data-type="entity-link" class="active" >SmartMirrorModuleConfig</a>
+                                           <a href="../injectables/SmartMirrorModuleConfig.html" >SmartMirrorModuleConfig</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
@@ -297,7 +297,7 @@
                                            <a href="../interfaces/Mirror.html" >Mirror</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/NewsSetting.html" >NewsSetting</a>
+                                           <a href="../interfaces/NewsSetting.html"  data-type="entity-link" class="active" >NewsSetting</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/RegisterRequest.html" >RegisterRequest</a>
@@ -338,15 +338,18 @@
                    
                    </nav>
                </div>
-               <div class="content injectable">
+               <div class="content interface">
                    <div class="content-data">
 
 
 
 
+
+
+
 <ol class="breadcrumb">
-  <li>Injectables</li>
-  <li>SmartMirrorModuleConfig</li>
+  <li>Interfaces</li>
+  <li>NewsSetting</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -364,84 +367,94 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/utils/module.config.ts</code>
+            <code>src/models/widget.ts</code>
         </p>
 
             <p class="comment">
                 <h3>Description</h3>
             </p>
             <p class="comment">
-                <p>Configuration class for the smart mirror module</p>
+                <p>Setting for the News Widget</p>
 
             </p>
 
+
+
+
             <section>
-                <h3 id="constructor">Constructor</h3>
+                <h3 id="inputs">Properties</h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <code>constructor(options: any)</code>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>feedUrl</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>feedUrl:     <code>string</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/utils/module.config.ts:12</a></div>
+                                            <i>Type : </i>    <code>string</code>
+
                                         </td>
                                     </tr>
-            
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/models/widget.ts:62</a></div>
+                                        </td>
+                                    </tr>
+
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-description"><p>creates the configration class with the given options</p>
-            </div>
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>options</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The options to use for configuration</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
-                                        </div>
+                                    <div class="io-description"><p>Url of the RSS News Feed</p>
+</div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-            </section>
-
-
-            <section>
-                
-                    <h3 id="inputs">
-                        Properties
-                    </h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b> ApiUrl</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <code>ApiUrl:     <code>string</code>
-            </bcode>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>maxCount</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>maxCount:     <code>number</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/utils/module.config.ts:26</a></div>
+                                            <i>Type : </i>    <code>number</code>
+
                                         </td>
                                     </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/models/widget.ts:67</a></div>
+                                        </td>
+                                    </tr>
+
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>The smart mirror api url for the http requests</p>
-            </div>
+                                    <div class="io-description"><p>Maximal count of news items to display</p>
+</div>
                                 </td>
                             </tr>
                         </tbody>
@@ -449,37 +462,105 @@
             </section>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &quot;@angular/core&quot;;
-import {SmartMirrorModuleOptions} from &quot;./module.options&quot;;
+        <pre class="line-numbers"><code class="language-typescript">import {WidgetType, WidgetSide} from &quot;./enums&quot;;
+
+export interface Widget {
+    /**
+     * Name of the widget
+     */
+    name: string;
+    /**
+     * Type of the Widget
+     */
+    type: WidgetType;
+    /**
+     * The Side of the Mirror to Display the Widget
+     */
+    side: WidgetSide;
+    /**
+     * The Order Position inside the Mirror Side
+     */
+    order: number;
+    /**
+     * Settings of the Widget
+     */
+    setting: WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings;
+}
 
 /**
- * Configuration class for the smart mirror module
+ * Settings of the Weather Widget
  */
-@Injectable()
-export class SmartMirrorModuleConfig {
-
+export interface WeatherSetting {
     /**
-     * creates the configration class with the given options
-     * @param options The options to use for configuration
+     * The City for Weather retrieval
      */
-    constructor(private options:SmartMirrorModuleOptions){
-
-    }
-
-    /**
-     * The smart mirror api url for the http requests
-     * @return {string} The Smart Mirror Api url
-     */
-    get ApiUrl() : string{
-        return this.options.apiUrl;
-    }
+    city: string;
 }
-</code></pre>
+
+/**
+ * Setting for the Task Widget
+ */
+export interface TaskSetting {
+
+    /**
+     * Maximal count of task items to display
+     */
+    maxCount: number;
+    /**
+     * OAuth token for google tasks
+     */
+    oAuthToken: string;
+}
+
+/**
+ * Setting for the News Widget
+ */
+export interface NewsSetting {
+    /**
+     * Url of the RSS News Feed
+     */
+    feedUrl: string;
+
+    /**
+     * Maximal count of news items to display
+     */
+    maxCount: number;
+}
+
+export interface MailSettings {
+
+    /**
+     * Maximal count of email items to display
+     */
+    maxCount: number;
+
+    /**
+     * show only unread email
+     */
+    unread: boolean;
+
+    /**
+     * OAuth token for google mail
+     */
+    oAuthToken: string;
+
+}
+
+export interface CalendarSettings {
+
+    /**
+     * Maximal count of email items to display
+     */
+    maxCount: number;
+
+    /**
+     * OAuth token for google mail
+     */
+    oAuthToken: string;
+
+}</code></pre>
     </div>
 </div>
-
-
-
 
 
 
