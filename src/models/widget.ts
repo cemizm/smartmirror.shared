@@ -12,7 +12,7 @@ export interface Widget {
     /**
      * Type of the Widget
      */
-    type: WidgetType;
+        type: WidgetType;
     /**
      * The Side of the Mirror to Display the Widget
      */
@@ -35,6 +35,11 @@ export interface WeatherSetting {
      * The City for Weather retrieval
      */
     city: string;
+
+    /**
+     * Maximal count of forecast days to display
+     */
+    maxCount: number;
 }
 
 /**
