@@ -13,19 +13,19 @@ export interface TaskQueryOptions {
     /**
      * Upper bound for a task's completion date to filter by. Optional. The default is not to filter by completion date.
      */
-    completedMax?: Date;
+    completedMax?: string;
     /**
      * Lower bound for a task's completion date to filter by. Optional. The default is not to filter by completion date.
      */
-    completedMin?: Date;
+    completedMin?: string;
     /**
      * Upper bound for a task's due date to filter by. Optional. The default is not to filter by due date.
      */
-    dueMax?: Date;
+    dueMax?: string;
     /**
      * Lower bound for a task's due date to filter by. Optional. The default is not to filter by due date.
      */
-    dueMin?: Date;
+    dueMin?: string;
     /**
      * Maximum number of task lists returned on one page. Optional. The default is 100.
      */
@@ -49,7 +49,7 @@ export interface TaskQueryOptions {
     /**
      * Lower bound for a task's last modification time to filter by. Optional. The default is not to filter by last modification time.
      */
-    updatedMin?: Date;
+    updatedMin?: string;
 
 }
 

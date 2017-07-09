@@ -12,6 +12,8 @@ import {TicketService} from "./services/ticket.service";
 import {BaseService} from "./gsuite/shared/base.service";
 import {TaskService} from "./gsuite/tasks/task.service";
 import {TaskListService} from "./gsuite/tasks/tasklist.service";
+import {CalendarListService} from "./gsuite/calendar/calendar-list.service";
+import {EventsService} from "./gsuite/calendar/events.service";
 
 export * from './models/index';
 export * from './services/index';
@@ -72,8 +74,12 @@ export class SmartMirrorModule {
                 TicketService,
 
                 //G-Suite stuff
+                //Tasks
                 TaskService,
-                TaskListService
+                TaskListService,
+                //Calendars
+                CalendarListService,
+                EventsService,
             ]
         };
     }
