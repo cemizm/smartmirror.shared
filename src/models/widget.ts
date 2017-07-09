@@ -55,6 +55,11 @@ export interface TaskSetting {
      * OAuth token for google tasks
      */
     oAuthToken: string;
+
+    /**
+     * Task List to display.
+     */
+    taskListId: string;
 }
 
 /**
@@ -102,5 +107,10 @@ export interface CalendarSettings {
      * OAuth token for google mail
      */
     oAuthToken: string;
+
+    /**
+     * the google calendar id to display
+     */
+    calendarId: string;
 
 }
