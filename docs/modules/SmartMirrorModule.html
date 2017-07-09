@@ -97,6 +97,9 @@
                                     <a href="../injectables/EventsService.html" >EventsService</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../injectables/MessagesService.html" >MessagesService</a>
+                                </li>
+                                <li class="link">
                                     <a href="../injectables/MirrorService.html" >MirrorService</a>
                                 </li>
                                 <li class="link">
@@ -187,6 +190,27 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/MailSettings.html" >MailSettings</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/Message.html" >Message</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MessageAttachment.html" >MessageAttachment</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MessageHeader.html" >MessageHeader</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MessageListQueryOptions.html" >MessageListQueryOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MessagePayload.html" >MessagePayload</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MessageQueryOptions.html" >MessageQueryOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MessagesListResponse.html" >MessagesListResponse</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Mirror.html" >Mirror</a>
@@ -334,6 +358,9 @@
                                            <a href="../injectables/EventsService.html" >EventsService</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../injectables/MessagesService.html" >MessagesService</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../injectables/MirrorService.html" >MirrorService</a>
                                        </li>
                                        <li class="link">
@@ -424,6 +451,27 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/MailSettings.html" >MailSettings</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/Message.html" >Message</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MessageAttachment.html" >MessageAttachment</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MessageHeader.html" >MessageHeader</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MessageListQueryOptions.html" >MessageListQueryOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MessagePayload.html" >MessagePayload</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MessageQueryOptions.html" >MessageQueryOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MessagesListResponse.html" >MessagesListResponse</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Mirror.html" >Mirror</a>
@@ -670,6 +718,7 @@ import {TaskService} from &quot;./gsuite/tasks/task.service&quot;;
 import {TaskListService} from &quot;./gsuite/tasks/tasklist.service&quot;;
 import {CalendarListService} from &quot;./gsuite/calendar/calendar-list.service&quot;;
 import {EventsService} from &quot;./gsuite/calendar/events.service&quot;;
+import {MessagesService} from &quot;./gsuite/mail/messages.service&quot;;
 
 export * from &#x27;./models/index&#x27;;
 export * from &#x27;./services/index&#x27;;
@@ -736,6 +785,8 @@ export class SmartMirrorModule {
                 //Calendars
                 CalendarListService,
                 EventsService,
+                //Gmail
+                MessagesService,
             ]
         };
     }
