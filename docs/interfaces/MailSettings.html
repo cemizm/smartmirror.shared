@@ -600,7 +600,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/models/widget.ts:80</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/models/widget.ts:85</a></div>
                                         </td>
                                     </tr>
 
@@ -638,7 +638,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/models/widget.ts:90</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/models/widget.ts:95</a></div>
                                         </td>
                                     </tr>
 
@@ -676,7 +676,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/models/widget.ts:85</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/models/widget.ts:90</a></div>
                                         </td>
                                     </tr>
 
@@ -745,6 +745,11 @@ export interface TaskSetting {
      * OAuth token for google tasks
      */
     oAuthToken: string;
+
+    /**
+     * Task List to display.
+     */
+    taskListId: string;
 }
 
 /**
@@ -792,6 +797,11 @@ export interface CalendarSettings {
      * OAuth token for google mail
      */
     oAuthToken: string;
+
+    /**
+     * the google calendar id to display
+     */
+    calendarId: string;
 
 }</code></pre>
     </div>

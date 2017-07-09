@@ -607,7 +607,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/models/widget.ts:67</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/models/widget.ts:72</a></div>
                                         </td>
                                     </tr>
 
@@ -645,7 +645,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/models/widget.ts:72</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/models/widget.ts:77</a></div>
                                         </td>
                                     </tr>
 
@@ -714,6 +714,11 @@ export interface TaskSetting {
      * OAuth token for google tasks
      */
     oAuthToken: string;
+
+    /**
+     * Task List to display.
+     */
+    taskListId: string;
 }
 
 /**
@@ -761,6 +766,11 @@ export interface CalendarSettings {
      * OAuth token for google mail
      */
     oAuthToken: string;
+
+    /**
+     * the google calendar id to display
+     */
+    calendarId: string;
 
 }</code></pre>
     </div>
