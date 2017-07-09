@@ -159,7 +159,7 @@
                                     <a href="../interfaces/Task.html" >Task</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/TaskLink.html" >TaskLink</a>
+                                    <a href="../interfaces/TaskLink.html"  data-type="entity-link" class="active" >TaskLink</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/TaskListQueryOptions.html" >TaskListQueryOptions</a>
@@ -183,7 +183,7 @@
                                     <a href="../interfaces/WeatherSetting.html" >WeatherSetting</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/Widget.html"  data-type="entity-link" class="active" >Widget</a>
+                                    <a href="../interfaces/Widget.html" >Widget</a>
                                 </li>
                         </ul>
                     </li>
@@ -348,7 +348,7 @@
                                            <a href="../interfaces/Task.html" >Task</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/TaskLink.html" >TaskLink</a>
+                                           <a href="../interfaces/TaskLink.html"  data-type="entity-link" class="active" >TaskLink</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/TaskListQueryOptions.html" >TaskListQueryOptions</a>
@@ -372,7 +372,7 @@
                                            <a href="../interfaces/WeatherSetting.html" >WeatherSetting</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/Widget.html"  data-type="entity-link" class="active" >Widget</a>
+                                           <a href="../interfaces/Widget.html" >Widget</a>
                                        </li>
                                </ul>
                            </li>
@@ -403,7 +403,7 @@
 
 <ol class="breadcrumb">
   <li>Interfaces</li>
-  <li>Widget</li>
+  <li>TaskLink</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -421,9 +421,16 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/models/widget.ts</code>
+            <code>src/gsuite/tasks/task-link.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A link of a Task.</p>
+
+            </p>
 
 
 
@@ -434,12 +441,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>name</b>
+                                        <b>description</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>name:     <code>string</code>
+                                        <code>description:     <code>string</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -456,13 +463,13 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/models/widget.ts:11</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/gsuite/tasks/task-link.model.ts:13</a></div>
                                         </td>
                                     </tr>
 
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>Name of the widget</p>
+                                    <div class="io-description"><p>The description. In HTML speak: Everything between <a> and </a>.</p>
 </div>
                                 </td>
                             </tr>
@@ -472,12 +479,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>order</b>
+                                        <b>link</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>order:     <code>number</code>
+                                        <code>link:     <code>string</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -485,7 +492,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>number</code>
+                                            <i>Type : </i>    <code>string</code>
 
                                         </td>
                                     </tr>
@@ -494,89 +501,13 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/widget.ts:23</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/gsuite/tasks/task-link.model.ts:17</a></div>
                                         </td>
                                     </tr>
 
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>The Order Position inside the Mirror Side</p>
-</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>setting</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>setting:     <code><a href="../interfaces/WeatherSetting.html" target="_self" >WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings</a></code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code><a href="../interfaces/WeatherSetting.html" target="_self" >WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings</a></code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/models/widget.ts:27</a></div>
-                                        </td>
-                                    </tr>
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>Settings of the Widget</p>
-</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>side</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>side:     <code>any</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code>any</code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/models/widget.ts:19</a></div>
-                                        </td>
-                                    </tr>
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>The Side of the Mirror to Display the Widget</p>
+                                    <div class="io-description"><p>The URL.</p>
 </div>
                                 </td>
                             </tr>
@@ -591,7 +522,7 @@
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>type:     <code>any</code>
+                                        <code>type:     <code>string</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -599,7 +530,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>any</code>
+                                            <i>Type : </i>    <code>string</code>
 
                                         </td>
                                     </tr>
@@ -608,13 +539,13 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/models/widget.ts:15</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/gsuite/tasks/task-link.model.ts:9</a></div>
                                         </td>
                                     </tr>
 
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>Type of the Widget</p>
+                                    <div class="io-description"><p>Type of the link, e.g. &quot;email&quot;.</p>
 </div>
                                 </td>
                             </tr>
@@ -623,103 +554,21 @@
             </section>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {WidgetType, WidgetSide} from &quot;./enums&quot;;
-
-export interface Widget {
+        <pre class="line-numbers"><code class="language-typescript">export interface TaskLink {
     /**
-     * Name of the widget
+     * Type of the link, e.g. &quot;email&quot;.
      */
-    name: string;
+        type: string;
     /**
-     * Type of the Widget
+     * The description. In HTML speak: Everything between &lt;a&gt; and &lt;/a&gt;.
      */
-    type: WidgetType;
+    description: string;
     /**
-     * The Side of the Mirror to Display the Widget
+     * The URL.
      */
-    side: WidgetSide;
-    /**
-     * The Order Position inside the Mirror Side
-     */
-    order: number;
-    /**
-     * Settings of the Widget
-     */
-    setting: WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings;
+    link: string;
 }
-
-/**
- * Settings of the Weather Widget
- */
-export interface WeatherSetting {
-    /**
-     * The City for Weather retrieval
-     */
-    city: string;
-}
-
-/**
- * Setting for the Task Widget
- */
-export interface TaskSetting {
-
-    /**
-     * Maximal count of task items to display
-     */
-    maxCount: number;
-    /**
-     * OAuth token for google tasks
-     */
-    oAuthToken: string;
-}
-
-/**
- * Setting for the News Widget
- */
-export interface NewsSetting {
-    /**
-     * Url of the RSS News Feed
-     */
-    feedUrl: string;
-
-    /**
-     * Maximal count of news items to display
-     */
-    maxCount: number;
-}
-
-export interface MailSettings {
-
-    /**
-     * Maximal count of email items to display
-     */
-    maxCount: number;
-
-    /**
-     * show only unread email
-     */
-    unread: boolean;
-
-    /**
-     * OAuth token for google mail
-     */
-    oAuthToken: string;
-
-}
-
-export interface CalendarSettings {
-
-    /**
-     * Maximal count of email items to display
-     */
-    maxCount: number;
-
-    /**
-     * OAuth token for google mail
-     */
-    oAuthToken: string;
-
-}</code></pre>
+</code></pre>
     </div>
 </div>
 

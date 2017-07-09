@@ -9,10 +9,14 @@ import {SmartMirrorModuleOptions} from "./utils/module.options";
 import {SmartMirrorService} from "./services/smartmirror.service";
 import {AuthService} from "./services/auth.service";
 import {TicketService} from "./services/ticket.service";
+import {BaseService} from "./gsuite/shared/base.service";
+import {TaskService} from "./gsuite/tasks/task.service";
+import {TaskListService} from "./gsuite/tasks/tasklist.service";
 
 export * from './models/index';
 export * from './services/index';
 export * from './utils/index'
+export * from './gsuite/index'
 
 export const SMARTMIRRORMODULE_OPTIONS = new InjectionToken<SmartMirrorModuleOptions>("SMARTMIRRORMODULE_OPTIONS");
 
@@ -51,7 +55,8 @@ export const SMARTMIRRORMODULE_OPTIONS = new InjectionToken<SmartMirrorModuleOpt
                 SMARTMIRRORMODULE_OPTIONS
             ]
         },
-        SmartMirrorService
+        SmartMirrorService,
+        BaseService
     ]
 })
 export class SmartMirrorModule {
@@ -64,7 +69,11 @@ export class SmartMirrorModule {
                 TokenService,
                 AuthService,
                 MirrorService,
-                TicketService
+                TicketService,
+
+                //G-Suite stuff
+                TaskService,
+                TaskListService
             ]
         };
     }

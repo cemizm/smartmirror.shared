@@ -88,7 +88,7 @@
                                     <a href="../injectables/AuthService.html" >AuthService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../injectables/BaseService.html" >BaseService</a>
+                                    <a href="../injectables/BaseService.html"  data-type="entity-link" class="active" >BaseService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MirrorService.html" >MirrorService</a>
@@ -183,7 +183,7 @@
                                     <a href="../interfaces/WeatherSetting.html" >WeatherSetting</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/Widget.html"  data-type="entity-link" class="active" >Widget</a>
+                                    <a href="../interfaces/Widget.html" >Widget</a>
                                 </li>
                         </ul>
                     </li>
@@ -277,7 +277,7 @@
                                            <a href="../injectables/AuthService.html" >AuthService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../injectables/BaseService.html" >BaseService</a>
+                                           <a href="../injectables/BaseService.html"  data-type="entity-link" class="active" >BaseService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MirrorService.html" >MirrorService</a>
@@ -372,7 +372,7 @@
                                            <a href="../interfaces/WeatherSetting.html" >WeatherSetting</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/Widget.html"  data-type="entity-link" class="active" >Widget</a>
+                                           <a href="../interfaces/Widget.html" >Widget</a>
                                        </li>
                                </ul>
                            </li>
@@ -392,18 +392,15 @@
                    
                    </nav>
                </div>
-               <div class="content interface">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
-
-
-
 <ol class="breadcrumb">
-  <li>Interfaces</li>
-  <li>Widget</li>
+  <li>Injectables</li>
+  <li>BaseService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -421,307 +418,514 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/models/widget.ts</code>
+            <code>src/gsuite/shared/base.service.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Internal service used by the module to add headers on each http-request and handle unauthorized response</p>
 
-
-
+            </p>
 
             <section>
-                <h3 id="inputs">Properties</h3>
+                <h3 id="constructor">Constructor</h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>name</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>name:     <code>string</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code>string</code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/models/widget.ts:11</a></div>
-                                        </td>
-                                    </tr>
-
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>Name of the widget</p>
-</div>
+                                    <code>constructor(http: any)</code>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>order</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>order:     <code>number</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>number</code>
-
+                                            <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/gsuite/shared/base.service.ts:14</a></div>
                                         </td>
                                     </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/models/widget.ts:23</a></div>
-                                        </td>
-                                    </tr>
-
+            
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>The Order Position inside the Mirror Side</p>
-</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>setting</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>setting:     <code><a href="../interfaces/WeatherSetting.html" target="_self" >WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings</a></code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code><a href="../interfaces/WeatherSetting.html" target="_self" >WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings</a></code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/models/widget.ts:27</a></div>
-                                        </td>
-                                    </tr>
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>Settings of the Widget</p>
-</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>side</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>side:     <code>any</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code>any</code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/models/widget.ts:19</a></div>
-                                        </td>
-                                    </tr>
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>The Side of the Mirror to Display the Widget</p>
-</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>type</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>type:     <code>any</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code>any</code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/models/widget.ts:15</a></div>
-                                        </td>
-                                    </tr>
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>Type of the Widget</p>
-</div>
+                                        <div class="io-description"><p>creates the internal smart mirror api service</p>
+            </div>
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>config</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Injected configuration for remote service</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>tokenService</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Injected token service for invalidating the authentication token</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>http</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Injected angular http client used for the remote requests</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
             </section>
+
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> get</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>get(url: string, token: string, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/gsuite/shared/base.service.ts:28</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>get</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> post</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>post(url: string, token: string, body: any, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/gsuite/shared/base.service.ts:35</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>post</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> put</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>put(url: string, token: string, body: any, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/gsuite/shared/base.service.ts:42</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>put</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> delete</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>delete(url: string, token: string, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/gsuite/shared/base.service.ts:49</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>delete</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> patch</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>patch(url: string, token: string, body: any, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/gsuite/shared/base.service.ts:56</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>patch</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> head</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>head(url: string, token: string, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/gsuite/shared/base.service.ts:63</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>head</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> options</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>options(url: string, token: string, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/gsuite/shared/base.service.ts:70</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Performs a request with <code>options</code> http method.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Private</span> sendRequest</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play lock"></span>
+                                    <code>sendRequest(requestOptionsArgs: any, token: string, options: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/gsuite/shared/base.service.ts:80</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>extends the request options with stored authentication token and sends the request to the remove service</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>requestOptionsArgs</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>The basic request options arguments</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>options</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Enhanced request options arguments</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Private</span> api</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-lock"></span><code>api:     <code>string</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>https://www.googleapis.com</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/gsuite/shared/base.service.ts:14</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+            </section>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {WidgetType, WidgetSide} from &quot;./enums&quot;;
+        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {Http, RequestOptionsArgs, Response, Request, RequestOptions, Headers, RequestMethod} from &#x27;@angular/http&#x27;;
+import {Observable} from &#x27;rxjs/Observable&#x27;;
 
-export interface Widget {
-    /**
-     * Name of the widget
-     */
-    name: string;
-    /**
-     * Type of the Widget
-     */
-    type: WidgetType;
-    /**
-     * The Side of the Mirror to Display the Widget
-     */
-    side: WidgetSide;
-    /**
-     * The Order Position inside the Mirror Side
-     */
-    order: number;
-    /**
-     * Settings of the Widget
-     */
-    setting: WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings;
-}
+import &#x27;rxjs/add/operator/catch&#x27;;
+import &#x27;rxjs/add/operator/map&#x27;;
 
 /**
- * Settings of the Weather Widget
+ * Internal service used by the module to add headers on each http-request and handle unauthorized response
  */
-export interface WeatherSetting {
-    /**
-     * The City for Weather retrieval
-     */
-    city: string;
+@Injectable()
+export class BaseService {
+
+  private api &#x3D; &#x27;https://www.googleapis.com&#x27;;
+
+  /**
+   * creates the internal smart mirror api service
+   * @param config Injected configuration for remote service
+   * @param tokenService Injected token service for invalidating the authentication token
+   * @param http Injected angular http client used for the remote requests
+   */
+  constructor(private http: Http) {
+  }
+
+  /**
+   * Performs a request with &#x60;get&#x60; http method.
+   */
+  public get(url: string, token: string, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Get, url: url, body: &#x27;&#x27;}, token, options);
+  }
+
+  /**
+   * Performs a request with &#x60;post&#x60; http method.
+   */
+  public post(url: string, token: string, body: any, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Post, url: url, body: body}, token, options);
+  }
+
+  /**
+   * Performs a request with &#x60;put&#x60; http method.
+   */
+  public put(url: string, token: string, body: any, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Put, url: url, body: body}, token, options);
+  }
+
+  /**
+   * Performs a request with &#x60;delete&#x60; http method.
+   */
+  public delete(url: string, token: string, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Delete, url: url, body: &#x27;&#x27;}, token, options);
+  }
+
+  /**
+   * Performs a request with &#x60;patch&#x60; http method.
+   */
+  public patch(url: string, token: string, body: any, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Patch, url: url, body: body}, token, options);
+  }
+
+  /**
+   * Performs a request with &#x60;head&#x60; http method.
+   */
+  public head(url: string, token: string, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Head, url: url, body: &#x27;&#x27;}, token, options);
+  }
+
+  /**
+   * Performs a request with &#x60;options&#x60; http method.
+   */
+  public options(url: string, token: string, options?: RequestOptionsArgs): Observable&lt;Response&gt; {
+    return this.sendRequest({method: RequestMethod.Options, url: url, body: &#x27;&#x27;}, token, options);
+  }
+
+  /**
+   * extends the request options with stored authentication token and sends the request to the remove service
+   * @param requestOptionsArgs The basic request options arguments
+   * @param options Enhanced request options arguments
+   * @return {Observable&lt;R|T&gt;} Observable to listen on http response
+   */
+  private sendRequest(requestOptionsArgs: RequestOptionsArgs, token: string, options?: RequestOptionsArgs): Observable&lt;any&gt; {
+
+    const requestOptions &#x3D; new RequestOptions(requestOptionsArgs);
+
+    requestOptions.url &#x3D; this.api + requestOptions.url;
+
+    if (!requestOptions.headers) {
+      requestOptions.headers &#x3D; new Headers();
+    }
+
+    requestOptions.headers.set(&#x27;Authorization&#x27;, &#x27;Bearer &#x27; + token);
+
+    const request &#x3D; new Request(requestOptions);
+    return this.http.request(request, options)
+      .map(res &#x3D;&gt; res);
+  }
 }
-
-/**
- * Setting for the Task Widget
- */
-export interface TaskSetting {
-
-    /**
-     * Maximal count of task items to display
-     */
-    maxCount: number;
-    /**
-     * OAuth token for google tasks
-     */
-    oAuthToken: string;
-}
-
-/**
- * Setting for the News Widget
- */
-export interface NewsSetting {
-    /**
-     * Url of the RSS News Feed
-     */
-    feedUrl: string;
-
-    /**
-     * Maximal count of news items to display
-     */
-    maxCount: number;
-}
-
-export interface MailSettings {
-
-    /**
-     * Maximal count of email items to display
-     */
-    maxCount: number;
-
-    /**
-     * show only unread email
-     */
-    unread: boolean;
-
-    /**
-     * OAuth token for google mail
-     */
-    oAuthToken: string;
-
-}
-
-export interface CalendarSettings {
-
-    /**
-     * Maximal count of email items to display
-     */
-    maxCount: number;
-
-    /**
-     * OAuth token for google mail
-     */
-    oAuthToken: string;
-
-}</code></pre>
+</code></pre>
     </div>
 </div>
+
+
+
 
 
 
