@@ -14,6 +14,7 @@ import {TaskService} from "./gsuite/tasks/task.service";
 import {TaskListService} from "./gsuite/tasks/tasklist.service";
 import {CalendarListService} from "./gsuite/calendar/calendar-list.service";
 import {EventsService} from "./gsuite/calendar/events.service";
+import {MessagesService} from "./gsuite/mail/messages.service";
 
 export * from './models/index';
 export * from './services/index';
@@ -80,6 +81,8 @@ export class SmartMirrorModule {
                 //Calendars
                 CalendarListService,
                 EventsService,
+                //Gmail
+                MessagesService,
             ]
         };
     }
