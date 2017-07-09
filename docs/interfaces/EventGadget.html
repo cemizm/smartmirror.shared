@@ -162,7 +162,7 @@
                                     <a href="../interfaces/EventDate.html" >EventDate</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/EventGadget.html" >EventGadget</a>
+                                    <a href="../interfaces/EventGadget.html"  data-type="entity-link" class="active" >EventGadget</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/EventPerson.html" >EventPerson</a>
@@ -201,7 +201,7 @@
                                     <a href="../interfaces/ResponseType.html" >ResponseType</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/SmartMirrorModuleOptions.html"  data-type="entity-link" class="active" >SmartMirrorModuleOptions</a>
+                                    <a href="../interfaces/SmartMirrorModuleOptions.html" >SmartMirrorModuleOptions</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Task.html" >Task</a>
@@ -399,7 +399,7 @@
                                            <a href="../interfaces/EventDate.html" >EventDate</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/EventGadget.html" >EventGadget</a>
+                                           <a href="../interfaces/EventGadget.html"  data-type="entity-link" class="active" >EventGadget</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/EventPerson.html" >EventPerson</a>
@@ -438,7 +438,7 @@
                                            <a href="../interfaces/ResponseType.html" >ResponseType</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/SmartMirrorModuleOptions.html"  data-type="entity-link" class="active" >SmartMirrorModuleOptions</a>
+                                           <a href="../interfaces/SmartMirrorModuleOptions.html" >SmartMirrorModuleOptions</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Task.html" >Task</a>
@@ -499,7 +499,7 @@
 
 <ol class="breadcrumb">
   <li>Interfaces</li>
-  <li>SmartMirrorModuleOptions</li>
+  <li>EventGadget</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -517,14 +517,14 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/utils/module.options.ts</code>
+            <code>src/gsuite/calendar/event-gadget.model.ts</code>
         </p>
 
             <p class="comment">
                 <h3>Description</h3>
             </p>
             <p class="comment">
-                <p>Created by cem on 10.06.17.</p>
+                <p>A gadget that extends an event.</p>
 
             </p>
 
@@ -537,12 +537,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>apiUrl</b>
+                                        <b>display</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>apiUrl:     <code>void</code>
+                                        <code>display:     <code>void</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -559,18 +559,327 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/utils/module.options.ts:6</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:34</a></div>
                                         </td>
                                     </tr>
 
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s display mode. Optional. Possible values are: <br/></p>
+<ul>
+<li>&quot;icon&quot; - The gadget displays next to the event&#39;s title in the calendar view. <br/></li>
+<li>&quot;chip&quot; - The gadget displays when the event is clicked. <br/></li>
+</ul>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>height</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>height:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:28</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s height in pixels. The height must be an integer greater than 0. Optional.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>iconLink</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>iconLink:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:20</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s icon URL. The URL scheme must be HTTPS.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>link</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>link:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:16</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s URL. The URL scheme must be HTTPS.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>preferences</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>preferences:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:38</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Preferences of the gadget.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>title</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>title:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:12</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s title.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>type</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>type:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:8</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s type.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>width</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>width:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/gsuite/calendar/event-gadget.model.ts:24</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The gadget&#39;s width in pixels. The width must be an integer greater than 0. Optional.</p>
+</div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
 
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">export interface SmartMirrorModuleOptions {
-    apiUrl:string;
+        <pre class="line-numbers"><code class="language-typescript">export interface EventGadget {
+    /**
+     * The gadget&#x27;s type.
+     */
+        type: string;
+    /**
+     * The gadget&#x27;s title.
+     */
+    title: string;
+    /**
+     * The gadget&#x27;s URL. The URL scheme must be HTTPS.
+     */
+    link: string;
+    /**
+     * The gadget&#x27;s icon URL. The URL scheme must be HTTPS.
+     */
+    iconLink: string;
+    /**
+     * The gadget&#x27;s width in pixels. The width must be an integer greater than 0. Optional.
+     */
+    width: number;
+    /**
+     * The gadget&#x27;s height in pixels. The height must be an integer greater than 0. Optional.
+     */
+    height: number;
+    /**
+     * The gadget&#x27;s display mode. Optional. Possible values are: &lt;br/&gt;
+     * - &quot;icon&quot; - The gadget displays next to the event&#x27;s title in the calendar view. &lt;br/&gt;
+     * - &quot;chip&quot; - The gadget displays when the event is clicked. &lt;br/&gt;
+     */
+    display: string;
+    /**
+     * Preferences of the gadget.
+     */
+    preferences: { [key: string]: string};
 }</code></pre>
     </div>
 </div>

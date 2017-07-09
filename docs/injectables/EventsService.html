@@ -94,7 +94,7 @@
                                     <a href="../injectables/CalendarListService.html" >CalendarListService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../injectables/EventsService.html" >EventsService</a>
+                                    <a href="../injectables/EventsService.html"  data-type="entity-link" class="active" >EventsService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MirrorService.html" >MirrorService</a>
@@ -201,7 +201,7 @@
                                     <a href="../interfaces/ResponseType.html" >ResponseType</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/SmartMirrorModuleOptions.html"  data-type="entity-link" class="active" >SmartMirrorModuleOptions</a>
+                                    <a href="../interfaces/SmartMirrorModuleOptions.html" >SmartMirrorModuleOptions</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Task.html" >Task</a>
@@ -331,7 +331,7 @@
                                            <a href="../injectables/CalendarListService.html" >CalendarListService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../injectables/EventsService.html" >EventsService</a>
+                                           <a href="../injectables/EventsService.html"  data-type="entity-link" class="active" >EventsService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MirrorService.html" >MirrorService</a>
@@ -438,7 +438,7 @@
                                            <a href="../interfaces/ResponseType.html" >ResponseType</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/SmartMirrorModuleOptions.html"  data-type="entity-link" class="active" >SmartMirrorModuleOptions</a>
+                                           <a href="../interfaces/SmartMirrorModuleOptions.html" >SmartMirrorModuleOptions</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Task.html" >Task</a>
@@ -488,18 +488,15 @@
                    
                    </nav>
                </div>
-               <div class="content interface">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
-
-
-
 <ol class="breadcrumb">
-  <li>Interfaces</li>
-  <li>SmartMirrorModuleOptions</li>
+  <li>Injectables</li>
+  <li>EventsService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -517,63 +514,316 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/utils/module.options.ts</code>
+            <code>src/gsuite/calendar/events.service.ts</code>
         </p>
-
-            <p class="comment">
-                <h3>Description</h3>
-            </p>
-            <p class="comment">
-                <p>Created by cem on 10.06.17.</p>
-
-            </p>
-
-
 
 
             <section>
-                <h3 id="inputs">Properties</h3>
+                <h3 id="constructor">Constructor</h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>apiUrl</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>apiUrl:     <code>void</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(service: <a href="../injectables/BaseService.html">BaseService</a>)</code>
+                                </td>
+                            </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>void</code>
-
+                                            <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/gsuite/calendar/events.service.ts:116</a></div>
                                         </td>
                                     </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/utils/module.options.ts:6</a></div>
-                                        </td>
-                                    </tr>
-
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Creates the EventsService</p>
+            </div>
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>service</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Injected internal http service for interacting with google apis</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
 
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> list</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>list(authToken: void, calendar: void, options: <a href="../interfaces/EventsQueryOptions.html">EventsQueryOptions</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/gsuite/calendar/events.service.ts:133</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Returns events on the specified calendar.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>authToken</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>token of the authenticated user</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>calendar</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Calendar identifier. To retrieve calendar IDs call the calendarList.list method.
+            If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>options</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>Optional query parameters</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>Observable&lt;&gt;</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Private</span> api</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-lock"></span><code>api:     <code></code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>/calendar/v3/calendars/</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/gsuite/calendar/events.service.ts:116</a></div>
+                                        </td>
+                                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>relative url to the calendars api</p>
+            </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                  <div class="io-description">
+                                  </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">export interface SmartMirrorModuleOptions {
-    apiUrl:string;
-}</code></pre>
+        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &quot;@angular/core&quot;;
+import {Observable} from &quot;rxjs/Observable&quot;;
+import &quot;rxjs/add/operator/catch&quot;;
+import &quot;rxjs/add/operator/map&quot;;
+import {BaseService} from &quot;../shared/base.service&quot;;
+import {ResponseType} from &quot;../shared/response-type.model&quot;;
+import {Event} from &quot;./event.model&quot;;
+
+
+/**
+ * Optional query options for events.
+ */
+export interface  EventsQueryOptions {
+    /**
+     * Whether to always include a value in the email field for the organizer, creator and attendees,
+     * even if no real email is available (i.e. a generated, non-working value will be provided).
+     * The use of this option is discouraged and should only be used by clients which cannot handle the
+     * absence of an email address value in the mentioned places. Optional. The default is False.
+     */
+    alwaysIncludeEmail?: boolean;
+    /**
+     * Specifies event ID in the iCalendar format to be included in the response. Optional.
+     */
+    iCalUID?: string;
+    /**
+     * The maximum number of attendees to include in the response.
+     * If there are more than the specified number of attendees, only the participant is returned. Optional.
+     */
+    maxAttendees?: number;
+    /**
+     * Maximum number of events returned on one result page.
+     * By default the value is 250 events. The page size can never be larger than 2500 events. Optional.
+     */
+    maxResults?: number;
+    /**
+     * The order of the events returned in the result. Optional. The default is an unspecified, stable order. &lt;br/&gt;
+     * Acceptable values are:&lt;br/&gt;
+     * - &quot;startTime&quot;: Order by the start date/time (ascending).
+     * This is only available when querying single events (i.e. the parameter singleEvents is True) &lt;br/&gt;
+     * - &quot;updated&quot;: Order by last modification time (ascending).
+     */
+    orderBy?: string;
+    /**
+     * Token specifying which result page to return. Optional.
+     */
+    pageToken?: string;
+    /**
+     * Extended properties constraint specified as propertyName&#x3D;value. Matches only private properties.
+     * This parameter might be repeated multiple times to return events that match all given constraints.
+     */
+    privateExtendedProperty?: string;
+    /**
+     * Free text search terms to find events that match these terms in any
+     * field, except for extended properties. Optional.
+     */
+    q?: string;
+    /**
+     * Extended properties constraint specified as propertyName&#x3D;value. Matches only shared properties.
+     * This parameter might be repeated multiple times to return events that match all given constraints.
+     */
+    sharedExtendedProperty?: string;
+    /**
+     * Whether to include deleted events (with status equals &quot;cancelled&quot;) in the result. Cancelled instances
+     * of recurring events (but not the underlying recurring event) will still be included if showDeleted and
+     * singleEvents are both False. If showDeleted and singleEvents are both True, only single instances of
+     * deleted events (but not the underlying recurring events) are returned. Optional. The default is False.
+     */
+    showDeleted?: boolean;
+    /**
+     * Whether to include hidden invitations in the result. Optional. The default is False.
+     */
+    showHiddenInvitations?: boolean;
+    /**
+     * Whether to expand recurring events into instances and only return single one-off events and
+     * instances of recurring events, but not the underlying recurring events themselves. Optional.
+     * The default is False.
+     */
+    singleEvents?: boolean;
+    /**
+     * Token obtained from the nextSyncToken field returned on the last page of results from the previous list request.
+     * It makes the result of this list request contain only entries that have changed since then.
+     */
+    syncToken?: string;
+    /**
+     * Upper bound (exclusive) for an event&#x27;s start time to filter by. Optional.
+     * The default is not to filter by start time. Must be an RFC3339 timestamp with
+     * mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z.
+     * Milliseconds may be provided but will be ignored.
+     */
+    timeMax?: string;
+    /**
+     * Lower bound (inclusive) for an event&#x27;s end time to filter by. Optional.
+     * The default is not to filter by end time. Must be an RFC3339 timestamp
+     * with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z.
+     * Milliseconds may be provided but will be ignored.
+     */
+    timeMin?: string;
+    /**
+     * Time zone used in the response. Optional. The default is the time zone of the calendar.
+     */
+    timeZone?: string;
+    /**
+     * Lower bound for an event&#x27;s last modification time (as a RFC3339 timestamp) to
+     * filter by. When specified, entries deleted since this time will always be included
+     * regardless of showDeleted. Optional. The default is not to filter by last modification time.
+     */
+    updatedMin?: string;
+}
+
+@Injectable()
+export class EventsService {
+    /**
+     * relative url to the calendars api
+     * @type {string}
+     */
+    private api &#x3D; &#x27;/calendar/v3/calendars/&#x27;;
+
+    /**
+     * Creates the EventsService
+     * @param service Injected internal http service for interacting with google apis
+     */
+    constructor(private service: BaseService) {
+    }
+
+    /**
+     * Returns events on the specified calendar.
+     * @param authToken token of the authenticated user
+     * @param calendar Calendar identifier. To retrieve calendar IDs call the calendarList.list method.
+     * If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.
+     * @param options Optional query parameters
+     * @return {Observable&lt;R&gt;} Events on the specified calendar
+     */
+    public list(authToken: string, calendar: string, options?: EventsQueryOptions): Observable&lt;Array&lt;Event&gt;&gt; {
+        return this.service.get(this.api + calendar + &#x27;/events&#x27;, authToken, {params: options})
+            .map(res &#x3D;&gt; &lt;ResponseType&gt;res.json())
+            .map(res &#x3D;&gt; &lt;Array&lt;Event&gt;&gt;res.items);
+    }
+
+}
+</code></pre>
     </div>
 </div>
+
+
+
 
 
 

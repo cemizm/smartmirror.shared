@@ -174,7 +174,7 @@
                                     <a href="../interfaces/EventReminder.html" >EventReminder</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/EventSource.html" >EventSource</a>
+                                    <a href="../interfaces/EventSource.html"  data-type="entity-link" class="active" >EventSource</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/EventsQueryOptions.html" >EventsQueryOptions</a>
@@ -201,7 +201,7 @@
                                     <a href="../interfaces/ResponseType.html" >ResponseType</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/SmartMirrorModuleOptions.html"  data-type="entity-link" class="active" >SmartMirrorModuleOptions</a>
+                                    <a href="../interfaces/SmartMirrorModuleOptions.html" >SmartMirrorModuleOptions</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Task.html" >Task</a>
@@ -411,7 +411,7 @@
                                            <a href="../interfaces/EventReminder.html" >EventReminder</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/EventSource.html" >EventSource</a>
+                                           <a href="../interfaces/EventSource.html"  data-type="entity-link" class="active" >EventSource</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/EventsQueryOptions.html" >EventsQueryOptions</a>
@@ -438,7 +438,7 @@
                                            <a href="../interfaces/ResponseType.html" >ResponseType</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/SmartMirrorModuleOptions.html"  data-type="entity-link" class="active" >SmartMirrorModuleOptions</a>
+                                           <a href="../interfaces/SmartMirrorModuleOptions.html" >SmartMirrorModuleOptions</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Task.html" >Task</a>
@@ -499,7 +499,7 @@
 
 <ol class="breadcrumb">
   <li>Interfaces</li>
-  <li>SmartMirrorModuleOptions</li>
+  <li>EventSource</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -517,14 +517,15 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/utils/module.options.ts</code>
+            <code>src/gsuite/calendar/event-source.model.ts</code>
         </p>
 
             <p class="comment">
                 <h3>Description</h3>
             </p>
             <p class="comment">
-                <p>Created by cem on 10.06.17.</p>
+                <p>Source from which an event was created. For example, a web page, an email
+message or any document identifiable by an URL with HTTP or HTTPS scheme.</p>
 
             </p>
 
@@ -537,12 +538,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>apiUrl</b>
+                                        <b>title</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>apiUrl:     <code>void</code>
+                                        <code>title:     <code>void</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -559,19 +560,71 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/utils/module.options.ts:6</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/gsuite/calendar/event-source.model.ts:13</a></div>
                                         </td>
                                     </tr>
 
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Title of the source; for example a title of a web page or an email subject.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>url</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>url:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/gsuite/calendar/event-source.model.ts:9</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>URL of the source pointing to a resource. The URL scheme must be HTTP or HTTPS.</p>
+</div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
 
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">export interface SmartMirrorModuleOptions {
-    apiUrl:string;
-}</code></pre>
+        <pre class="line-numbers"><code class="language-typescript">export interface EventSource {
+    /**
+     * URL of the source pointing to a resource. The URL scheme must be HTTP or HTTPS.
+     */
+    url: string;
+    /**
+     * Title of the source; for example a title of a web page or an email subject.
+     */
+    title: string
+}
+</code></pre>
     </div>
 </div>
 

@@ -135,7 +135,7 @@
                                 id="xs-interfaces-links"
                             >
                                 <li class="link">
-                                    <a href="../interfaces/CalendarList.html" >CalendarList</a>
+                                    <a href="../interfaces/CalendarList.html"  data-type="entity-link" class="active" >CalendarList</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/CalendarListQueryOptions.html" >CalendarListQueryOptions</a>
@@ -186,7 +186,7 @@
                                     <a href="../interfaces/LoginResponse.html" >LoginResponse</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/MailSettings.html"  data-type="entity-link" class="active" >MailSettings</a>
+                                    <a href="../interfaces/MailSettings.html" >MailSettings</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Mirror.html" >Mirror</a>
@@ -372,7 +372,7 @@
                                        id="interfaces-links"
                    >
                                        <li class="link">
-                                           <a href="../interfaces/CalendarList.html" >CalendarList</a>
+                                           <a href="../interfaces/CalendarList.html"  data-type="entity-link" class="active" >CalendarList</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/CalendarListQueryOptions.html" >CalendarListQueryOptions</a>
@@ -423,7 +423,7 @@
                                            <a href="../interfaces/LoginResponse.html" >LoginResponse</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/MailSettings.html"  data-type="entity-link" class="active" >MailSettings</a>
+                                           <a href="../interfaces/MailSettings.html" >MailSettings</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Mirror.html" >Mirror</a>
@@ -499,7 +499,7 @@
 
 <ol class="breadcrumb">
   <li>Interfaces</li>
-  <li>MailSettings</li>
+  <li>CalendarList</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -517,9 +517,16 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/models/widget.ts</code>
+            <code>src/gsuite/calendar/calendar-list.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>The collection of calendars in the user&#39;s calendar list.</p>
+
+            </p>
 
 
 
@@ -530,12 +537,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>maxCount</b>
+                                        <b>accessRole</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>maxCount:     <code>void</code>
+                                        <code>accessRole:     <code>void</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -552,13 +559,22 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/models/widget.ts:80</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:69</a></div>
                                         </td>
                                     </tr>
 
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>Maximal count of email items to display</p>
+                                    <div class="io-description"><p>The effective access role that the authenticated user has on the calendar. Read-only. Possible values are: <br/></p>
+<ul>
+<li>&quot;freeBusyReader&quot; - Provides read access to free/busy information. <br/></li>
+<li>&quot;reader&quot; - Provides read access to the calendar. Private events will appear to users with reader access,
+but event details will be hidden. <br/></li>
+<li>&quot;writer&quot; - Provides read and write access to the calendar. Private events will appear to users with writer
+access, and event details will be visible. <br/></li>
+<li>&quot;owner&quot; - Provides ownership of the calendar. This role has all of the permissions of the writer role with
+the additional ability to see and manipulate ACLs.</li>
+</ul>
 </div>
                                 </td>
                             </tr>
@@ -568,12 +584,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>oAuthToken</b>
+                                        <b>backgroundColor</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>oAuthToken:     <code>void</code>
+                                        <code>backgroundColor:     <code>void</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -590,13 +606,13 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/models/widget.ts:90</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:46</a></div>
                                         </td>
                                     </tr>
 
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>OAuth token for google mail</p>
+                                    <div class="io-description"><p>The main color of the calendar in the hexadecimal format &quot;#0088aa&quot;. This property supersedes the index-based colorId property.</p>
 </div>
                                 </td>
                             </tr>
@@ -606,12 +622,12 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <b>unread</b>
+                                        <b>colorId</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>unread:     <code>void</code>
+                                        <code>colorId:     <code>void</code>
 </bcode>
                                     </td>
                                 </tr>
@@ -628,13 +644,583 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/models/widget.ts:85</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:42</a></div>
                                         </td>
                                     </tr>
 
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>show only unread email</p>
+                                    <div class="io-description"><p>The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>defaultReminders</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>defaultReminders:     <code>Array</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>Array</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:73</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The default reminders that the authenticated user has for this calendar.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>deleted</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>deleted:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:85</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Whether this calendar list entry has been deleted from the calendar list. Read-only. Optional. The default is False.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>description</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>description:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:26</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Description of the calendar. Optional. Read-only.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>etag</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>etag:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:14</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>ETag of the resource.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>foregroundColor</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>foregroundColor:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:50</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The foreground color of the calendar in the hexadecimal format &quot;#ffffff&quot;. This property supersedes the index-based colorId property.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>hidden</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>hidden:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:54</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Whether the calendar has been hidden from the list. Optional. The default is False.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>id</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>id:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:18</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Identifier of the calendar.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>kind</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>kind:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:10</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Type of the resource (&quot;calendar#calendarListEntry&quot;).</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>location</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>location:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:30</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Geographic location of the calendar as free-form text. Optional. Read-only.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>notificationSettings</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>notificationSettings:     <code>Array</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>Array</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:77</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The list of notifications set for this calendar.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>primary</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>primary:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:81</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Whether the calendar is the primary calendar of the authenticated user. Read-only. Optional. The default is False.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>selected</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>selected:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:58</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Whether the calendar content shows up in the calendar UI. Optional. The default is False.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>summary</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>summary:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:22</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Title of the calendar. Read-only.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>summaryOverride</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>summaryOverride:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:38</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The summary that the authenticated user has set for this calendar. Optional.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>timeZone</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>timeZone:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/gsuite/calendar/calendar-list.model.ts:34</a></div>
+                                        </td>
+                                    </tr>
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The time zone of the calendar. Optional. Read-only.</p>
 </div>
                                 </td>
                             </tr>
@@ -644,107 +1230,91 @@
 
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {WidgetType, WidgetSide} from &quot;./enums&quot;;
-
-export interface Widget {
-    /**
-     * Name of the widget
-     */
-    name: string;
-    /**
-     * Type of the Widget
-     */
-        type: WidgetType;
-    /**
-     * The Side of the Mirror to Display the Widget
-     */
-    side: WidgetSide;
-    /**
-     * The Order Position inside the Mirror Side
-     */
-    order: number;
-    /**
-     * Settings of the Widget
-     */
-    setting: WeatherSetting | TaskSetting | NewsSetting | MailSettings | CalendarSettings;
-}
-
+        <pre class="line-numbers"><code class="language-typescript">import {CalendarReminder} from &quot;./calendar-reminders.model&quot;;
+import {CalendarNotifications} from &quot;./calendar-notifications.model&quot;;
 /**
- * Settings of the Weather Widget
+ * The collection of calendars in the user&#x27;s calendar list.
  */
-export interface WeatherSetting {
+export interface CalendarList {
     /**
-     * The City for Weather retrieval
+     * Type of the resource (&quot;calendar#calendarListEntry&quot;).
      */
-    city: string;
-
+    kind: string;
     /**
-     * Maximal count of forecast days to display
+     * ETag of the resource.
      */
-    maxCount: number;
-}
-
-/**
- * Setting for the Task Widget
- */
-export interface TaskSetting {
-
+    etag: string;
     /**
-     * Maximal count of task items to display
+     * Identifier of the calendar.
      */
-    maxCount: number;
+    id: string;
     /**
-     * OAuth token for google tasks
+     * Title of the calendar. Read-only.
      */
-    oAuthToken: string;
-}
-
-/**
- * Setting for the News Widget
- */
-export interface NewsSetting {
+    summary: string;
     /**
-     * Url of the RSS News Feed
+     * Description of the calendar. Optional. Read-only.
      */
-    feedUrl: string;
-
+    description: string;
     /**
-     * Maximal count of news items to display
+     * Geographic location of the calendar as free-form text. Optional. Read-only.
      */
-    maxCount: number;
-}
-
-export interface MailSettings {
-
+    location: string;
     /**
-     * Maximal count of email items to display
+     * The time zone of the calendar. Optional. Read-only.
      */
-    maxCount: number;
-
+    timeZone: string;
     /**
-     * show only unread email
+     * The summary that the authenticated user has set for this calendar. Optional.
      */
-    unread: boolean;
-
+    summaryOverride: string;
     /**
-     * OAuth token for google mail
+     * The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition.
      */
-    oAuthToken: string;
-
-}
-
-export interface CalendarSettings {
-
+    colorId: string;
     /**
-     * Maximal count of email items to display
+     * The main color of the calendar in the hexadecimal format &quot;#0088aa&quot;. This property supersedes the index-based colorId property.
      */
-    maxCount: number;
-
+    backgroundColor: string;
     /**
-     * OAuth token for google mail
+     * The foreground color of the calendar in the hexadecimal format &quot;#ffffff&quot;. This property supersedes the index-based colorId property.
      */
-    oAuthToken: string;
-
+    foregroundColor: string;
+    /**
+     * Whether the calendar has been hidden from the list. Optional. The default is False.
+     */
+    hidden: boolean;
+    /**
+     * Whether the calendar content shows up in the calendar UI. Optional. The default is False.
+     */
+    selected: boolean;
+    /**
+     * The effective access role that the authenticated user has on the calendar. Read-only. Possible values are: &lt;br/&gt;
+     * - &quot;freeBusyReader&quot; - Provides read access to free/busy information. &lt;br/&gt;
+     * - &quot;reader&quot; - Provides read access to the calendar. Private events will appear to users with reader access,
+     * but event details will be hidden. &lt;br/&gt;
+     * - &quot;writer&quot; - Provides read and write access to the calendar. Private events will appear to users with writer
+     * access, and event details will be visible. &lt;br/&gt;
+     * - &quot;owner&quot; - Provides ownership of the calendar. This role has all of the permissions of the writer role with
+     * the additional ability to see and manipulate ACLs.
+     */
+    accessRole: string;
+    /**
+     * The default reminders that the authenticated user has for this calendar.
+     */
+    defaultReminders: Array&lt;CalendarReminder&gt;;
+    /**
+     * The list of notifications set for this calendar.
+     */
+    notificationSettings: Array&lt;CalendarNotifications&gt;;
+    /**
+     * Whether the calendar is the primary calendar of the authenticated user. Read-only. Optional. The default is False.
+     */
+    primary: boolean;
+    /**
+     * Whether this calendar list entry has been deleted from the calendar list. Read-only. Optional. The default is False.
+     */
+    deleted: boolean
 }</code></pre>
     </div>
 </div>
