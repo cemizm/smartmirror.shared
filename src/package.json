@@ -1,6 +1,6 @@
 {
   "name": "@cemizm/smartmirror-shared",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "repository": {
     "type": "git",
     "url": "https://github.com/cemizm/smartmirror.shared"
