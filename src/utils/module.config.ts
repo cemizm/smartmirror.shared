@@ -15,7 +15,7 @@ export class SmartMirrorModuleConfig {
      * creates the configration class with the given options
      * @param options The options to use for configuration
      */
-    constructor(private options:SmartMirrorModuleOptions){
+    constructor(private options: SmartMirrorModuleOptions) {
 
     }
 
@@ -23,7 +23,15 @@ export class SmartMirrorModuleConfig {
      * The smart mirror api url for the http requests
      * @return {string} The Smart Mirror Api url
      */
-    get ApiUrl() : string{
+    get ApiUrl(): string {
         return this.options.apiUrl;
+    }
+
+    /**
+     * The smart mirror realtime service url.
+     * @constructor
+     */
+    get RTUrl(): string {
+        return this.options.rtUrl;
     }
 }

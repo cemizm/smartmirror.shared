@@ -15,6 +15,7 @@ import {TaskListService} from "./gsuite/tasks/tasklist.service";
 import {CalendarListService} from "./gsuite/calendar/calendar-list.service";
 import {EventsService} from "./gsuite/calendar/events.service";
 import {MessagesService} from "./gsuite/mail/messages.service";
+import {SocketService} from "./services/socket.service";
 
 export * from './models/index';
 export * from './services/index';
@@ -59,6 +60,7 @@ export const SMARTMIRRORMODULE_OPTIONS = new InjectionToken<SmartMirrorModuleOpt
             ]
         },
         SmartMirrorService,
+        SocketService,
         BaseService
     ]
 })
@@ -73,6 +75,7 @@ export class SmartMirrorModule {
                 AuthService,
                 MirrorService,
                 TicketService,
+
 
                 //G-Suite stuff
                 //Tasks

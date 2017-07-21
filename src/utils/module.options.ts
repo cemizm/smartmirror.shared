@@ -3,5 +3,6 @@
  */
 
 export interface SmartMirrorModuleOptions {
-    apiUrl:string;
+    apiUrl: string;
+    rtUrl: string;
 }

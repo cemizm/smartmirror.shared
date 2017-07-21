@@ -2,19 +2,19 @@
  * Created by Cem Basoglu on 09.06.17.
  */
 
-import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs';
-import {Mirror} from '../models/mirror';
-
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
+import {Injectable} from "@angular/core";
+import {Observable} from "rxjs";
+import {Mirror} from "../models/mirror";
+import "rxjs/add/operator/catch";
+import "rxjs/add/operator/map";
 import {SmartMirrorService} from "./smartmirror.service";
+import {SocketService} from "./socket.service";
 
 /**
  * MirrorService class for interacting with the remote mirror collection.
  */
 @Injectable()
-export class MirrorService  {
+export class MirrorService {
     /**
      * relative url to the mirrors api
      * @type {string}
@@ -25,7 +25,14 @@ export class MirrorService  {
      * Creates the MirrorService
      * @param service Injected internal http service for interacting with SmartMirror Api
      */
-    constructor(private service: SmartMirrorService) {
+    constructor(private service: SmartMirrorService,
+                private socket: SocketService) {
+    }
+
+    public watchUpdates(id: string): Observable<Mirror> {
+        this.socket.connect(id);
+
+        return this.socket.watch<Mirror>("update");
     }
 
     /**
@@ -51,7 +58,8 @@ export class MirrorService  {
      * @return {Observable<R>}
      */
     public update(mirror: Mirror): Observable<void> {
-        return this.service.put(this.api, mirror).map(()=>{});
+        return this.service.put(this.api, mirror).map(()=> {
+        });
     }
 
     /**
@@ -60,7 +68,8 @@ export class MirrorService  {
      * @return {Observable<R>}
      */
     public deleteById(id: string): Observable<void> {
-        return this.service.delete(this.api + '/' + id).map(()=>{});
+        return this.service.delete(this.api + '/' + id).map(()=> {
+        });
     }
 
 }
