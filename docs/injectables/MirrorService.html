@@ -109,6 +109,9 @@
                                     <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../injectables/SocketService.html" >SocketService</a>
+                                </li>
+                                <li class="link">
                                     <a href="../injectables/StorageService.html" >StorageService</a>
                                 </li>
                                 <li class="link">
@@ -370,6 +373,9 @@
                                            <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../injectables/SocketService.html" >SocketService</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../injectables/StorageService.html" >StorageService</a>
                                        </li>
                                        <li class="link">
@@ -579,7 +585,7 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <code>constructor(service: <a href="../injectables/SmartMirrorService.html">SmartMirrorService</a>)</code>
+                                    <code>constructor(service: <a href="../injectables/SmartMirrorService.html">SmartMirrorService</a>, socket: <a href="../injectables/SocketService.html">SocketService</a>)</code>
                                 </td>
                             </tr>
                                     <tr>
@@ -621,6 +627,38 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> watchUpdates</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>watchUpdates(id: void)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/services/mirror.service.ts:32</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>Observable&lt;&gt;</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
                                     <b><span class="modifier">Public</span> getAll</b>
                                 </td>
                             </tr>
@@ -634,7 +672,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/services/mirror.service.ts:35</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/services/mirror.service.ts:42</a></div>
                                         </td>
                                     </tr>
             
@@ -673,7 +711,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/services/mirror.service.ts:44</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/services/mirror.service.ts:51</a></div>
                                         </td>
                                     </tr>
             
@@ -724,7 +762,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/services/mirror.service.ts:53</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/services/mirror.service.ts:60</a></div>
                                         </td>
                                     </tr>
             
@@ -775,7 +813,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/services/mirror.service.ts:62</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/services/mirror.service.ts:70</a></div>
                                         </td>
                                     </tr>
             
@@ -856,19 +894,19 @@
             </section>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
-import {Observable} from &#x27;rxjs&#x27;;
-import {Mirror} from &#x27;../models/mirror&#x27;;
-
-import &#x27;rxjs/add/operator/catch&#x27;;
-import &#x27;rxjs/add/operator/map&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &quot;@angular/core&quot;;
+import {Observable} from &quot;rxjs&quot;;
+import {Mirror} from &quot;../models/mirror&quot;;
+import &quot;rxjs/add/operator/catch&quot;;
+import &quot;rxjs/add/operator/map&quot;;
 import {SmartMirrorService} from &quot;./smartmirror.service&quot;;
+import {SocketService} from &quot;./socket.service&quot;;
 
 /**
  * MirrorService class for interacting with the remote mirror collection.
  */
 @Injectable()
-export class MirrorService  {
+export class MirrorService {
     /**
      * relative url to the mirrors api
      * @type {string}
@@ -879,7 +917,14 @@ export class MirrorService  {
      * Creates the MirrorService
      * @param service Injected internal http service for interacting with SmartMirror Api
      */
-    constructor(private service: SmartMirrorService) {
+    constructor(private service: SmartMirrorService,
+                private socket: SocketService) {
+    }
+
+    public watchUpdates(id: string): Observable&lt;Mirror&gt; {
+        this.socket.connect(id);
+
+        return this.socket.watch&lt;Mirror&gt;(&quot;update&quot;);
     }
 
     /**
@@ -905,7 +950,8 @@ export class MirrorService  {
      * @return {Observable&lt;R&gt;}
      */
     public update(mirror: Mirror): Observable&lt;void&gt; {
-        return this.service.put(this.api, mirror).map(()&#x3D;&gt;{});
+        return this.service.put(this.api, mirror).map(()&#x3D;&gt; {
+        });
     }
 
     /**
@@ -914,7 +960,8 @@ export class MirrorService  {
      * @return {Observable&lt;R&gt;}
      */
     public deleteById(id: string): Observable&lt;void&gt; {
-        return this.service.delete(this.api + &#x27;/&#x27; + id).map(()&#x3D;&gt;{});
+        return this.service.delete(this.api + &#x27;/&#x27; + id).map(()&#x3D;&gt; {
+        });
     }
 
 }

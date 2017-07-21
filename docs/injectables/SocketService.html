@@ -109,7 +109,7 @@
                                     <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../injectables/SocketService.html" >SocketService</a>
+                                    <a href="../injectables/SocketService.html"  data-type="entity-link" class="active" >SocketService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/StorageService.html" >StorageService</a>
@@ -198,7 +198,7 @@
                                     <a href="../interfaces/Message.html" >Message</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/MessageAttachment.html"  data-type="entity-link" class="active" >MessageAttachment</a>
+                                    <a href="../interfaces/MessageAttachment.html" >MessageAttachment</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/MessageHeader.html" >MessageHeader</a>
@@ -373,7 +373,7 @@
                                            <a href="../injectables/SmartMirrorService.html" >SmartMirrorService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../injectables/SocketService.html" >SocketService</a>
+                                           <a href="../injectables/SocketService.html"  data-type="entity-link" class="active" >SocketService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/StorageService.html" >StorageService</a>
@@ -462,7 +462,7 @@
                                            <a href="../interfaces/Message.html" >Message</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/MessageAttachment.html"  data-type="entity-link" class="active" >MessageAttachment</a>
+                                           <a href="../interfaces/MessageAttachment.html" >MessageAttachment</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/MessageHeader.html" >MessageHeader</a>
@@ -542,18 +542,15 @@
                    
                    </nav>
                </div>
-               <div class="content interface">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
-
-
-
 <ol class="breadcrumb">
-  <li>Interfaces</li>
-  <li>MessageAttachment</li>
+  <li>Injectables</li>
+  <li>SocketService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -571,159 +568,307 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/gsuite/mail/message-attachment.model.ts</code>
+            <code>src/services/socket.service.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>MirrorService class for interacting with the remote mirror collection.</p>
 
-
-
+            </p>
 
             <section>
-                <h3 id="inputs">Properties</h3>
+                <h3 id="constructor">Constructor</h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>attachmentId</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>attachmentId:     <code>void</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code>void</code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/gsuite/mail/message-attachment.model.ts:7</a></div>
-                                        </td>
-                                    </tr>
-
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>When present, contains the ID of an external attachment that can be retrieved in a
-separate messages.attachments.get request.
-When not present, the entire content of the message part body is contained in the data field.</p>
-</div>
+                                    <code>constructor(config: <a href="../injectables/SmartMirrorModuleConfig.html">SmartMirrorModuleConfig</a>)</code>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>data</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>data:     <code>void</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>void</code>
-
+                                            <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/services/socket.service.ts:16</a></div>
                                         </td>
                                     </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/gsuite/mail/message-attachment.model.ts:18</a></div>
-                                        </td>
-                                    </tr>
-
+            
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-description"><p>The body data of a MIME message part as a base64url encoded string.
-May be empty for MIME container types that have no message body or when the
-body data is sent as a separate attachment. An attachment ID is present if the
-body data is contained in a separate attachment.</p>
-</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <b>size</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>size:     <code>void</code>
-</bcode>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code>void</code>
-
-                                        </td>
-                                    </tr>
-
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/gsuite/mail/message-attachment.model.ts:11</a></div>
-                                        </td>
-                                    </tr>
-
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>Number of bytes for the message part data (encoding notwithstanding).</p>
-</div>
+                                        <div class="io-description"><p>Creates the SocketService</p>
+            </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
             </section>
 
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> connect</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>connect(mirrorId: void)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/services/socket.service.ts:28</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>connects to the given socket.io service</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>mirrorId</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>optional mirror id to subscribe to</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> watch</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>watch(message: void)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/services/socket.service.ts:40</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Watch to given message</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>message</b>
+                                                            </div>
+                                                            <div>
+                                                                
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>Observable&lt;&gt;</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> send</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>send(message: void, obj: T)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/services/socket.service.ts:56</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Send message</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>message</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>to send</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>obj</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>to send</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Private</span> socket</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-lock"></span><code>socket:     <code>void</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>void</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/services/socket.service.ts:16</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+            </section>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">export interface MessageAttachment {
+        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &quot;@angular/core&quot;;
+import {SmartMirrorModuleConfig} from &quot;../utils/module.config&quot;;
+import io from &quot;socket.io-client&quot;;
+import {Observable} from &quot;rxjs&quot;;
+
+
+/**
+ * MirrorService class for interacting with the remote mirror collection.
+ */
+@Injectable()
+export class SocketService {
+    private socket: any;
+
     /**
-     * When present, contains the ID of an external attachment that can be retrieved in a
-     * separate messages.attachments.get request.
-     * When not present, the entire content of the message part body is contained in the data field.
+     * Creates the SocketService
      */
-    attachmentId: string;
+    constructor(private config: SmartMirrorModuleConfig) {
+    }
+
     /**
-     * Number of bytes for the message part data (encoding notwithstanding).
+     * connects to the given socket.io service
+     * @param mirrorId optional mirror id to subscribe to
      */
-    size: number;
+    public connect(mirrorId?: string) {
+        var cfg &#x3D; null;
+        if (mirrorId)
+            cfg &#x3D; {query: &#x27;mirrorId&#x3D;&#x27; + mirrorId};
+
+        this.socket &#x3D; io(this.config.RTUrl, cfg);
+    }
+
     /**
-     * The body data of a MIME message part as a base64url encoded string.
-     * May be empty for MIME container types that have no message body or when the
-     * body data is sent as a separate attachment. An attachment ID is present if the
-     * body data is contained in a separate attachment.
+     * Watch to given message
+     * @param message
      */
-    data: string;
-}</code></pre>
+    public watch&lt;T&gt;(message: string): Observable&lt;T&gt; {
+        return new Observable&lt;T&gt;(observer &#x3D;&gt; {
+            this.socket.on(message, (data) &#x3D;&gt; {
+                observer.next(data);
+            });
+            return () &#x3D;&gt; {
+                this.socket.disconnect();
+            };
+        });
+    }
+
+    /**
+     * Send message
+     * @param message to send
+     * @param obj to send
+     */
+    public send&lt;T&gt;(message: string, obj: T): void {
+        this.socket.emit(message, obj);
+    }
+
+
+}
+</code></pre>
     </div>
 </div>
+
+
+
 
 
 
