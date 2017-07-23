@@ -121,7 +121,7 @@
                                     <a href="../injectables/TaskService.html" >TaskService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../injectables/TicketService.html"  data-type="entity-link" class="active" >TicketService</a>
+                                    <a href="../injectables/TicketService.html" >TicketService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/TokenService.html" >TokenService</a>
@@ -156,7 +156,7 @@
                                     <a href="../interfaces/CalendarSettings.html" >CalendarSettings</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/ControlRequest.html" >ControlRequest</a>
+                                    <a href="../interfaces/ControlRequest.html"  data-type="entity-link" class="active" >ControlRequest</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Event.html" >Event</a>
@@ -388,7 +388,7 @@
                                            <a href="../injectables/TaskService.html" >TaskService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../injectables/TicketService.html"  data-type="entity-link" class="active" >TicketService</a>
+                                           <a href="../injectables/TicketService.html" >TicketService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/TokenService.html" >TokenService</a>
@@ -423,7 +423,7 @@
                                            <a href="../interfaces/CalendarSettings.html" >CalendarSettings</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/ControlRequest.html" >ControlRequest</a>
+                                           <a href="../interfaces/ControlRequest.html"  data-type="entity-link" class="active" >ControlRequest</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Event.html" >Event</a>
@@ -548,15 +548,18 @@
                    
                    </nav>
                </div>
-               <div class="content injectable">
+               <div class="content interface">
                    <div class="content-data">
 
 
 
 
+
+
+
 <ol class="breadcrumb">
-  <li>Injectables</li>
-  <li>TicketService</li>
+  <li>Interfaces</li>
+  <li>ControlRequest</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -574,263 +577,122 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/services/ticket.service.ts</code>
+            <code>src/models/control-request.ts</code>
         </p>
 
-            <p class="comment">
-                <h3>Description</h3>
-            </p>
-            <p class="comment">
-                <p>TicketService class for registration of new mirrors</p>
 
-            </p>
+
+
 
             <section>
-                <h3 id="constructor">Constructor</h3>
+                <h3 id="inputs">Properties</h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <code>constructor(service: <a href="../injectables/SmartMirrorService.html">SmartMirrorService</a>)</code>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/services/ticket.service.ts:24</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Creates the AuthService</p>
-            </div>
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>service</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Injected internal http service for interacting with SmartMirror Api</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </section>
-
-            <section>
-                
-                    <h3 id="methods">
-                        Methods
-                    </h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> get</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>get(id: void)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/services/ticket.service.ts:38</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Gets a registration ticket for a new mirror with given id</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>id</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The id of the mirror to create a new registration ticket</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>Observable&lt;&gt;</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> register</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>register(number: void)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/services/ticket.service.ts:47</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Registers a new mirror with the given ticket number for the authenticated user</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>number</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The ticket number of the mirror to register with</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>Observable&lt;&gt;</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </section>
-
-            <section>
-                
-                    <h3 id="inputs">
-                        Properties
-                    </h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Private</span> api</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-lock"></span><code>api:     <code></code>
-            </bcode>
-                                </td>
-                            </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>/tickets</code>
+                                        <b>action</b>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>action:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/services/ticket.service.ts:24</a></div>
+                                            <i>Type : </i>    <code>void</code>
+
                                         </td>
                                     </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-description"><p>relative url to the tickets api</p>
-            </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                  <div class="io-description">
-                                  </div>
-                                </td>
-                            </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/models/control-request.ts:3</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>mirrorId</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>mirrorId:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="2" class="link-to-prism">src/models/control-request.ts:2</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>payload</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>payload:     <code>void</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>void</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/models/control-request.ts:4</a></div>
+                                        </td>
+                                    </tr>
+
                         </tbody>
                     </table>
             </section>
+
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
-import {Observable} from &#x27;rxjs&#x27;;
-
-import {SmartMirrorService} from &quot;./smartmirror.service&quot;;
-import {Mirror} from &quot;../models/mirror&quot;;
-import {Ticket} from &quot;../models/ticket&quot;;
-
-import &#x27;rxjs/add/operator/catch&#x27;;
-import &#x27;rxjs/add/operator/map&#x27;;
-
-/**
- * TicketService class for registration of new mirrors
- */
-@Injectable()
-export class TicketService  {
-    /**
-     * relative url to the tickets api
-     * @type {string}
-     */
-    private api &#x3D; &#x27;/tickets&#x27;;
-
-    /**
-     * Creates the AuthService
-     * @param service Injected internal http service for interacting with SmartMirror Api
-     */
-    constructor(private service: SmartMirrorService) {
-    }
-
-    /**
-     * Gets a registration ticket for a new mirror with given id
-     * @param id The id of the mirror to create a new registration ticket
-     * @return {Observable&lt;R&gt;} ticket for registration
-     */
-    public get(id:string): Observable&lt;Ticket&gt; {
-        return this.service.get(this.api + &#x27;/&#x27; + id).map(res &#x3D;&gt; &lt;Ticket&gt;res.json());
-    }
-
-    /**
-     * Registers a new mirror with the given ticket number for the authenticated user
-     * @param number The ticket number of the mirror to register with
-     * @return {Observable&lt;R&gt;} the created mirror with default settings
-     */
-    public register(number: string): Observable&lt;Mirror&gt; {
-        return this.service.post(this.api + &#x27;/&#x27; + number, {}).map(res &#x3D;&gt; &lt;Mirror&gt;res.json());
-    }
-
-}
-</code></pre>
+        <pre class="line-numbers"><code class="language-typescript">export interface ControlRequest {
+    mirrorId: string;
+    action: string;
+    payload: any;
+}</code></pre>
     </div>
 </div>
-
-
-
 
 
 
