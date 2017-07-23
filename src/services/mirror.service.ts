@@ -9,6 +9,7 @@ import "rxjs/add/operator/catch";
 import "rxjs/add/operator/map";
 import {SmartMirrorService} from "./smartmirror.service";
 import {SocketService} from "./socket.service";
+import {ControlRequest} from "../models/control-request";
 
 /**
  * MirrorService class for interacting with the remote mirror collection.
@@ -21,6 +22,8 @@ export class MirrorService {
      */
     private api = '/mirrors';
 
+    private watching = false;
+
     /**
      * Creates the MirrorService
      * @param service Injected internal http service for interacting with SmartMirror Api
@@ -29,10 +32,30 @@ export class MirrorService {
                 private socket: SocketService) {
     }
 
+    /**
+     * Watches for Mirror setting updates
+     * @param id of the mirror to listen for mirror updates
+     */
     public watchUpdates(id: string): Observable<Mirror> {
-        this.socket.connect(id);
+        if (!this.watching) {
+            this.socket.connect(id);
+            this.watching = true;
+        }
 
         return this.socket.watch<Mirror>("update");
+    }
+
+    /**
+     * Watches for control request
+     * @param id of the mirror to listen for control request
+     */
+    public watchControlRequest(id: string): Observable<ControlRequest> {
+        if (!this.watching) {
+            this.socket.connect(id);
+            this.watching = true;
+        }
+
+        return this.socket.watch<ControlRequest>("action");
     }
 
     /**
